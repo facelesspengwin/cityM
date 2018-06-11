@@ -1,0 +1,61 @@
+@import '../../../assets/sass/variables.scss';
+
+.TextBlock {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    font-size: 1rem;
+    align-self: center;
+    text-align: center;
+    justify-items: center;
+
+    .Header {
+        font-size: 2.5em;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+    .Title {
+        font-size: 4em;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+    .Description {
+        font-family: $secondFont;
+        font-size: 0.95em;
+        width: 85%;
+        //justify-self: right;
+        text-align: justify;
+    }
+    @media(min-width: 1600px) {
+        .Title {
+            font-size: 8.5em;
+        }
+        .Description {
+            width: 25%;
+            justify-self: right;
+        }
+    }
+
+    @media(min-width: 768px) and (max-width: 1599px) {
+        .Title {
+            font-size: 7em;
+        }
+        .Description {
+            width: 40%;
+            justify-self: right;
+        }
+    }
+    @media(min-width: 460px) and (max-width: 767px) {
+        .Title {
+            font-size: 5em;
+        }
+        .Description {
+            width: 50%;
+            justify-self: right;
+        }
+    }
+}
+@media(min-width: 460px) {
+    .TextBlock {
+        justify-items: right;
+    }
+}

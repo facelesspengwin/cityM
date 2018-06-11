@@ -1,0 +1,12 @@
+.Header {
+    .Logo {
+        margin-top: 2rem;
+        width: 30%;
+    }
+
+    @media(min-width: 768px) {
+        .Logo {
+            max-width: 8.8rem;
+        }
+    }
+}

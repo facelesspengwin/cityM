@@ -11,12 +11,16 @@ import videoBG from './assets/videos/videoBG.mp4';
 import Main from './containers/Main/Main';
 
 class App extends Component {
+  state = {
+    currPage: "page1"
+  }
+
   render() {
     return (
       <main className={styles.App}>
           <Layout>
             <Header />
-            <Main />
+            <Main pageNum={this.state.currPage}/>
             <Footer />
           </Layout>
           <video autoPlay loop className={styles.videoBG} muted plays-inline="true">

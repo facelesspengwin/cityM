@@ -8,7 +8,7 @@ import Footer from './components/UI/Footer/Footer';
 
 import videoBG from './assets/videos/videoBG.mp4';
 
-import HomePage from './containers/HomePage/HomePage';
+import Main from './containers/Main/Main';
 
 class App extends Component {
   render() {
@@ -16,10 +16,10 @@ class App extends Component {
       <main className={styles.App}>
           <Layout>
             <Header />
-            <HomePage />
+            <Main />
             <Footer />
           </Layout>
-          <video autoPlay loop className={styles.videoBG} muted plays-inline>
+          <video autoPlay loop className={styles.videoBG} muted plays-inline="true">
               <source src={videoBG} type='video/mp4' />
           </video>
       </main>

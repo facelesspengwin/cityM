@@ -4,7 +4,7 @@ import styles from './Footer.scss';
 const Footer = () => {
     return(
         <footer className={styles.Footer}>
-            <p>Hello World</p>
+            <p>This is a Footer</p>
         </footer>
     );
 }

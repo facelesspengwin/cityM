@@ -1,5 +1,8 @@
+@import '../../assets/sass/variables.scss';
+
 .Main {
     align-self: center;
+    color: $mainTextColor;
 }
 @media(min-width: 460px) {
     .Main {

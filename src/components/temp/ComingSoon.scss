@@ -1,0 +1,15 @@
+@import '../../assets/sass/variables.scss';
+
+.ComingSoon {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    font-size: 1rem;
+    align-self: center;
+    text-align: center;
+    justify-items: center;
+}
+@media(min-width: 460px) {
+    .ComingSoon {
+        justify-items: right;
+    }
+}

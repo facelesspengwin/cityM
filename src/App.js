@@ -4,7 +4,7 @@ import styles from './App.scss';
 import Layout from './hoc/Layout';
 
 import Header from './components/UI/Header/Header';
-import Footer from './components/UI/Footer/Footer';
+// import Footer from './components/UI/Footer/Footer';
 
 import videoBG from './assets/videos/videoBG.mp4';
 
@@ -31,7 +31,7 @@ class App extends Component {
           <Layout>
             <Header />
             <Main pageNum={this.state.currPage} click={this.HandleClick}/>
-            <Footer />
+            {/* <Footer /> */}
           </Layout>
           <video autoPlay loop className={styles.videoBG} muted plays-inline="true">
               <source src={videoBG} type='video/mp4' />
